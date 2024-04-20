@@ -1,0 +1,55 @@
+header {
+    padding: 20px 0;
+    background-color: #828282;
+}
+.menu {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 0 15px;
+}
+.drop_menu_block {
+    position: relative;
+}
+.drop_menu {
+    flex-direction: column;
+    gap: 3px;
+    display: none;
+    position: absolute;
+    top: 38px;
+    left: 0;
+}
+.sub_drop {
+    position: relative;
+}
+.drop_menu_sub {
+    display: none;
+    flex-direction: column;
+    gap: 3px;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 250px;
+}
+.drop_menu_block:hover .drop_menu {
+    display: flex;
+    width: 250px;
+}
+.products:hover {
+    background-color: dodgerblue;
+    padding: 20px 15px;
+}
+.drop_menu a {
+    background-color: dodgerblue;
+    border: 3px solid #1976d3;
+    padding: 15px;
+    border-radius: 10px;
+    display: block;
+}
+.sub_drop:hover .drop_menu_sub {
+    display: flex;
+}
